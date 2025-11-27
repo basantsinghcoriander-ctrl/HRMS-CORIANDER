@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Attendance Punch System</h1>
+
+<input type="text" id="empName" placeholder="Enter Employee Name">
+<button onclick="punch('IN')">Punch IN</button>
+<button onclick="punch('OUT')">Punch OUT</button>
+
+<table border="1" id="attendanceTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Date</th>
+<th>Time</th>
+<th>Face</th>
+<th>Latitude</th>
+<th>Longitude</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<video id="camera" autoplay playsinline width="250"></video>
+<canvas id="snapshot" width="250" height="250" style="display:none;"></canvas>
+<button onclick="takePhoto()">Take Photo</button>
+<img id="preview" src="" width="100" style="margin-top:10px;">
+
+<script src="script.js"></script>
+</body>
+</html>
